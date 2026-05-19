@@ -20,17 +20,23 @@ if nome:
                 comida = st.text_input("Qual sua comida favorita?")
                 idade = st.number_input("Qual sua idade?", step=1, min_value=0)
 
-                if comida and idade:
+                tesouro = st.text_input("Qual o nome do nosso tesouro? 👶❤️")
+
+                if comida and idade and tesouro:
                     st.markdown("## 💌 RESULTADO 💌")
+
                     st.write("**Nome:**", nome)
                     st.write("**Idade:**", idade)
+                    st.write("**Nosso tesouro:**", tesouro)
 
                     if comida.lower().strip() == "lasanha":
                         st.success("A gente combina 😍🍕")
                     else:
                         st.info("Prefiro lasanha com você 😄")
 
-                    st.markdown("### ❤️ Amor da vida do Adauto ❤️")
+                    st.markdown("### ❤️ Anelise, você é o Amor da vida do Adauto ❤️")
+
+                    st.balloons()
 
             else:
                 st.error("Senha incorreta!")
